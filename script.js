@@ -1,7 +1,6 @@
 //declaring and invoking functions
-function greet(name) {
-    name = name || "Guest";
-    return "Hello " + name + "!";
+function greet(name = "Guest") {
+    return `Hello, ${name}!`;
 }
 console.log(greet("Anupa")); //return greeting
 console.log(greet()); //default greeting
